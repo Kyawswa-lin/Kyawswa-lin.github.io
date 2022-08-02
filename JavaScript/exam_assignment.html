@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exam Result</h1>
+    <form name="myForm">
+        <label for="name">Name</label>
+        <input type="text" name ="name" id="name"><br><br>
+        <label for="html">Html</label>
+        <input type="number" name="html" id="html"><br><br>
+        <label for="css">Css</label>
+        <input type="number" name="css" id="css"><br><br>
+        <label for="js">Javascript</label>
+        <input type="number" name="js" id="js"><br><br>
+        <input type="submit" onclick="react()" value="Submit">
+    </form>
+    <script>
+        
+        function react(){
+            let name = document.myForm.name.value;
+            console.log(name);
+            let html = document.myForm.html.value;
+            console.log(html);
+            let css = document.myForm.css.value;
+            console.log(css);
+            let js = document.myForm.js.value;
+            console.log(js);
+        if(html >= 50 && css >= 50 && js >= 50){
+            if(html>80 || css>80 || js>80){
+                    if(html>80){
+                        if(css>80){
+                            if(js>80){
+                                document.write("<h2>"+name+"  pass the exam with degree in html,css and javascript.</h2>");
+                            }else{
+                                document.write("<h2>"+name+"  pass the exam with degree in html and css</h2>");
+                            }
+                        }else if(js>80){
+                            document.write("<h2>"+name+"  pass the exam with degree in html and javascript.</h2>");
+                        }else{
+                            document.write("<h2>"+name+"  pass the exam with degree in html.</h2>");
+                        }
+                    }else if(css>80){
+                        if(js>80){
+                            document.write("<h2>"+name+"  pass the exam with degree in css and javascript</h2>");
+                        }else{
+                            document.write("<h2>"+name+"  pass the exam with degree in css</h2>");
+                        }
+                    }else{
+                        document.write("<h2>"+name+"  pass the exam with degree in javascript.</h2>");
+                    }
+                }else{
+                    document.write("<h2>"+name+"  pass the exam</h2>");
+                }
+        }else{
+                document.write("<h2>"+name+"  is fail the exam</h2>");
+        }
+    }
+        
+    </script>
+</body>
+</html>

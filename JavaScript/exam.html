@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exam Result</h1>
+    <form name="MyExam">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="html">Html</label>
+        <input type="number" name="html" id="html"><br><br>
+        <label for="css">Css</label>
+        <input type="number" name="css" id="css"><br><br>
+        <label for="js">Js</label>
+        <input type="number" name="js" id="js"><br><br>
+        <button type="button" onclick="result()">Result</button>
+        </form>
+        <script>
+            function result(){
+            let name= document.MyExam.name.value;
+            console.log(name);
+            let html=document.MyExam.html.value;
+            console.log(html);
+            let css=document.MyExam.css.value;
+            console.log(css);
+            let js=document.MyExam.js.value;
+            console.log(js);
+           if(html>=50 && css>=50 && js>=50){
+                if(html>80 || css>80 || js>80){
+                    if(html>80){
+                        if(css>80){
+                            if(js>80){
+                                document.write('<h2>'+name+' is passed with distinction in html,css and javascript</h2>');
+                            }else{
+                                document.write("<h2>'+name+' is passed with distinction in html and css.</h2>");
+                            }
+                        }else if(js>80){
+                            document.write("<h2>'+name+' is passed with distinction in html and js</h2>");
+                        }else{
+                            document.write("<h2>'+name+' is passed with distinction in html.</h2>");
+                        }
+
+                    }else if(css>80){
+                        if(js>80){
+                            document.write("<h2>'+name+' is passed with distinction in css and javascript.</h2>");
+                        }else{
+                            document.write("<h2>'+name+' is passed with distiction in css.</h2>");
+                        }
+                    }else{
+                        document.write.("<h2>'+name+' is pass with distinction in jsvascript.</h2>");
+                    }
+
+                }else{
+                    document.write("<h2>'+name+' is passed</h2>");
+                }
+           }else{
+            document.write("<h2>'+name+' is failed.</h2>");
+           }
+            
+        </script>
+</body>
+</html>
