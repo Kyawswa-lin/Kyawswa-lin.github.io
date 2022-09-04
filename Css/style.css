@@ -1,0 +1,70 @@
+a[title="google"]{
+    color:red;
+    text-decoration: none;
+}
+/*id_selector*/
+#idselector{
+    color:red;
+    font-size: 20px;
+    letter-spacing: 20px;
+    line-height: 20px;
+    text-indent: 50px;
+    text-shadow: 2px 3px 3px;
+}
+div.classselector{
+    color: blue;
+    word-spacing: 40px;
+    line-height: 40px;
+}
+.desc a {
+color: red;
+font-size: 30px;
+text-decoration: none;
+}
+.child>a{
+    color:blue;
+    font-size: 20px;
+
+}
+a:link{
+    text-decoration: none;
+    color:blue;
+    font-size: 20px;
+    
+}
+a:hover{
+    color:red;
+    letter-spacing: 10px;
+}
+a:active{
+    color:black;
+}
+a:visited{
+    color:brown;
+}
+div:target{
+color:red;
+}
+p:target{
+    color:blue;
+}
+.grid_one div,
+.grid_two div,
+.grid_three div{
+    padding:20px;
+    text-align: center;
+    color: white;
+}
+.grid_one,
+.grid_two,
+.grid_three{
+    display: grid;
+   grid-template-columns: auto auto auto;
+}
+.grid_two{
+    grid-column-gap:40px;
+    grid-row-gap:40px;
+}
+.grid_three{
+    grid-gap: 10px;
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="icons/css/all.css">
+    <style>
+.nav_brand img{
+    height: 100px;
+    width: 150px;
+    margin-left:25px;
+    margin-top:8px;
+}
+.brand_name{
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    font-size: 20px;
+}
+.nav_brand{
+    display: inline-block;
+}
+.navbar ul{
+    float: right;
+}
+.navbar ul li{
+    display: inline-block;
+    padding-top:53px;
+    margin-right: 40px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.navbar ul li a:hover{
+    letter-spacing: 3px;
+    color: rgb(122, 128, 221);
+}
+.navbar{
+    padding-bottom: -150px;
+}
+        .option{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding-left: 10px;
+        }
+        .title{
+            text-align: center;
+        }
+        .drop{
+            position: relative;
+            display:inline-block;
+            width: 300px;
+        }
+        .but{
+            padding: 10px;
+            text-align: center;
+            background:navy;
+            border: none;
+            width: 100%;
+            color: whitesmoke;
+            font-size: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .content{
+            background-color: pink;
+            width:100%;
+            position: absolute;
+            text-align: center;
+            overflow: hidden;
+            height: 0px;
+            transition: 0.6s;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .content a{
+            display: block;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 8px;
+            color: black;
+            box-sizing: border-box;
+            border-bottom: 1px solid rgb(112, 126, 247);
+        }
+        .drop:hover > .content{
+            height: 150px;
+        }
+        .content a:hover{
+            background: palevioletred;
+            color: whitesmoke;
+        }.grider{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    grid-gap: 30px;
+    margin: 30px;
+}
+
+.flower{
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 3px 10px black;
+    margin-bottom: 10px;
+}
+.discount{
+    text-decoration: line-through;
+    color: red;
+    
+}
+.grider button{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(147, 183, 229);
+    
+}
+.lig_box{
+    display: table;
+    position: fixed;
+    top:-100%;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: trans;
+    transition-duration: 2s;
+}
+.lig_box:target{
+    top: 0;
+}
+
+.container{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: red;
+}
+.cont{
+    background:rgb(162, 189, 224);
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 30px;
+    position:relative;
+}
+.cont input,textarea{
+    border: none;
+    border-bottom: 2px dotted blueviolet;
+    background:transparent;
+}
+.sub_but{
+    padding: 15px;
+    background:navy;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: none;
+    border: none;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav_brand">
+            <img src="images/logo.png">
+            <p class="brand_name"> Kyaw Floral</p>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#" style="color: red;">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html">Contact</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping fa-beat"></i></a></li>
+        </ul>
+    </nav>
+    <h1 class="title">Shop</h1>
+    <div class="option">
+        <div class="drop">
+            <button class="but">Occasion</button>
+            <div class="content">
+                <a href="">Wedding</a>
+                <a href="">Funeral</a>
+                <a href="">Gift</a>
+                <a href="">Birthday Present</a>
+            </div>
+        </div>
+        <div class="drop">
+            <button class="but">Bouquet Style</button>
+            <div class="content">
+                <a href="">Lorem Lorem</a>
+                <a href="">Lorem Lorem</a>
+                <a href="">Lorem Lorem</a>
+                <a href="">Lorem Lorem</a>
+            </div>
+        </div>
+        <div class="drop">
+            <button class="but">Prizes</button>
+            <div class="content">
+                <a href="">20000 MMK</a>
+                <a href="">40000MMK - 70000MMK</a>
+                <a href="">80000MMK - 200000 MMK</a>
+                <a href="">200000MMK - Above</a>
+            </div>
+        </div>
+        <div class="drop">
+            <button class="but">Flower Arrangements</button>
+            <div class="content">
+                <a href="">First-Arrange</a>
+                <a href="">Second-Arrange</a>
+                <a href="">Third-Arrange</a>
+                <a href="">Fourth-Arrange</a>
+            </div>
+        </div>
+    </div>
+    <div class="grider">
+        <div class="flower-box">
+            <img src="images/flower1.jpg" alt="" class="flower">
+            <p>IRISES</p>
+            <P>40000MMK</P>
+           <a href="#lightbox"><button class="button">Add to card</button></a>
+        </div>
+        <div class="flower-box">
+            <img src="images/flower2.jpg" alt="" class="flower">
+            <p>IRISES</p>
+            <P>40000MMK</P>
+            <a href="#lightbox"><button class="button">Add to card</button></a>
+        </div>
+        <div class="flower-box">
+            <img src="images/flower3.jpg" alt="" class="flower">
+            <p>IRISES</p>
+            <P>40000MMK</P>
+            <a href="#lightbox"><button class="button">Add to card</button></a>
+        </div>
+        <div class="flower-box">
+            <img src="images/flower4.jpg" alt="" class="flower">
+            <p>IRISES</p>
+            <P>35000MMK <small class="discount">40000MMK</small></P>
+            <a href="#lightbox"><button class="button">Add to card</button></a>
+        </div>
+        <div class="flower-box">
+            <img src="images/flower5.jpg" alt="" class="flower">
+            <p>IRISES</p>
+            <P>40000MMK</P>
+            <a href="#lightbox"><button class="button">Add to card</button></a>
+        </div>
+        <div class="flower-box">
+            <img src="images/flower6.jpg" alt="" class="flower">
+            <p>IRISES</p>
+            <P>35000MMK <small class="discount">40000MMK</small></P>
+            <a href="#lightbox"><button class="button">Add to card</button></a>
+        </div>
+        <div class="flower-box">
+            <img src="images/flower7.jpg" alt="" class="flower">
+            <p>IRISES</p>
+            <P>40000MMK</P>
+            <a href="#lightbox"><button class="button">Add to card</button></a>
+        </div>
+        <div class="flower-box">
+            <img src="images/flower1.jpg" alt="" class="flower">
+            <p>IRISES</p>
+            <P>40000MMK</P>
+            <a href="#lightbox"><button class="button">Add to card</button></a>
+        </div>
+        <div class="flower-box">
+            <img src="images/flower1.jpg" alt="" class="flower">
+            <p>IRISES</p>
+            <P>40000MMK</P>
+            <a href="#lightbox"><button class="button">Add to card</button></a>
+        </div>
+        <div class="flower-box">
+            <img src="images/flower2.jpg" alt="" class="flower">
+            <p>IRISES</p>
+            <P>40000MMK</P>
+            <a href="#lightbox"><button class="button">Add to card</button></a>
+        </div>
+        <div class="flower-box">
+            <img src="images/flower3.jpg" alt="" class="flower">
+            <p>IRISES</p>
+            <P>40000MMK</P>
+            <a href="#lightbox"><button class="button">Add to card</button></a>
+        </div>
+        <div class="flower-box">
+            <img src="images/flower4.jpg" alt="" class="flower">
+            <p>IRISES</p>
+            <P>35000MMK <small class="discount">40000MMK</small></P>
+            <a href="#lightbox"><button class="button">Add to card</button></a>
+        </div>
+    </div>
+    <div class="lig_box" id="lightbox">
+       
+        <div class="container">
+            <div class="cont">
+                <a href="#"><i class="fa-solid fa-xmark" id="close"></i></a>
+                <form action="#">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"><br><br><br><br>
+                <label for="name">Email</label>
+                <input type="email" id="name" name="name"><br><br><br><br>
+                <label for="order">Order Name</label>
+                <input type="text" id="order" name="name"><br><br><br><br>
+                <label for="phone">Phone-no</label>
+                <input type="number" id="phone" name="phone"><br><br><br><br>
+                <label for="name">Address</label>
+                <textarea placeholder="Address"></textarea><br><br><br><br>
+                <button type="submit" class="sub_but">Order Now</button>
+                </form>
+            </div>
+    </div>
+</body>
+</html>
